@@ -1,0 +1,4 @@
+main: com.gmail.ryderzye.DamageModifier.DamageModifier
+version: 1.0
+name: DamageModifier
+api-version: 1.16

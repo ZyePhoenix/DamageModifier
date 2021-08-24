@@ -1,0 +1,34 @@
+# damage multipliers for weapon/damage type
+# 1.0 is 100% of original damage, 0.7 is -30% damage, 1.3 is +30% damage
+# if player has permission, they deal original * multiplier damage (exception for crystal)
+damages:
+  default: 1.0
+  sword:
+    wooden: 1.0
+    stone: 1.0
+    iron: 1.0
+    gold: 1.0
+    diamond: 1.0
+    netherite: 1.0
+    permissions: damagemodifier.sword
+  axe:
+    wooden: 1.0
+    stone: 1.0
+    iron: 1.0
+    gold: 1.0
+    diamond: 1.0
+    netherite: 1.0
+    permissions: damagemodifier.axe
+  projectile:
+    arrow: 1.0
+    firework: 1.0
+    permissions: damagemodifier.projectile
+  crystal:
+    player: 0.1
+    # this permission is flipped
+    # if player has this permission they take original * multiplier damage
+    # if player does not have permission, they take vanilla damage
+    permissions: damagemodifier.crystal
+  tnt:
+    player: 1.0
+    permissions: damagemodifier.tnt
