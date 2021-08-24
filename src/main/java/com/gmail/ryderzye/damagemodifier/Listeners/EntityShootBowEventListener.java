@@ -1,6 +1,6 @@
-package com.gmail.ryderzye.DamageModifier.Listeners;
+package com.gmail.ryderzye.damagemodifier.Listeners;
 
-import com.gmail.ryderzye.DamageModifier.DamageModifier;
+import com.gmail.ryderzye.damagemodifier.DamageModifier;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
@@ -19,7 +19,8 @@ public class EntityShootBowEventListener implements Listener {
         Entity projectile = event.getProjectile();
         if (event.getEntity().getType() == EntityType.PLAYER) {
             Player shooter = (Player)event.getEntity();
-            if (shooter.hasPermission(DamageModifier.get().getConfig().getString("damages.projectile.permissions"))) {
+            String permission = DamageModifier.get().getConfig().getString("damages.projectile.permissions");
+            if (permission != null && shooter.hasPermission(permission)) {
                 double damageMultiplier = DamageModifier.get().getConfig().getDouble("damages.projectile.arrow");
                 Arrow oldArrow = (Arrow)projectile;
                 Vector oldSpeed = oldArrow.getVelocity();
