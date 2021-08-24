@@ -22,6 +22,8 @@ public class EntityShootBowEventListener implements Listener {
             String permission = DamageModifier.get().getConfig().getString("damages.projectile.permissions");
             if (permission != null && shooter.hasPermission(permission)) {
                 double damageMultiplier = DamageModifier.get().getConfig().getDouble("damages.projectile.arrow");
+                // square the multiplier as arrow damage is calculated based on the square root of (x^2 + y^2 + z^2)
+                damageMultiplier *= damageMultiplier;
                 Arrow oldArrow = (Arrow)projectile;
                 Vector oldSpeed = oldArrow.getVelocity();
                 Vector newSpeed = new Vector(oldSpeed.getX() * damageMultiplier, oldSpeed.getY() * damageMultiplier, oldSpeed.getZ() * damageMultiplier);
