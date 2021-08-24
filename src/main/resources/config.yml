@@ -24,7 +24,7 @@ damages:
     firework: 1.0
     permissions: damagemodifier.projectile
   crystal:
-    player: 0.1
+    player: 1.0
     # this permission is flipped
     # if player has this permission they take original * multiplier damage
     # if player does not have permission, they take vanilla damage
