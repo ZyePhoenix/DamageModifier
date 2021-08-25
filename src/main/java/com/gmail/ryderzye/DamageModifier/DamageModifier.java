@@ -1,11 +1,10 @@
-package com.gmail.ryderzye.damagemodifier;
+package com.gmail.ryderzye.DamageModifier;
 
-import com.gmail.ryderzye.damagemodifier.Listeners.EntityDamageByEntityListener;
-import com.gmail.ryderzye.damagemodifier.Listeners.EntityShootBowEventListener;
-import org.bukkit.event.Listener;
+import com.gmail.ryderzye.DamageModifier.Listeners.EntityDamageByEntityListener;
+import com.gmail.ryderzye.DamageModifier.Listeners.EntityShootBowEventListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class DamageModifier extends JavaPlugin implements Listener {
+public class DamageModifier extends JavaPlugin {
     public static DamageModifier dm;
 
     public DamageModifier() {

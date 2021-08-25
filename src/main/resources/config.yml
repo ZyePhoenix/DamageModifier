@@ -24,6 +24,8 @@ damages:
     firework: 1.0
     permissions: damagemodifier.projectile
   crystal:
+    # determines if shields should block crystal damage, default vanilla behaviour is false
+    shield: false
     player: 1.0
     # this permission is flipped
     # if player has this permission they take original * multiplier damage

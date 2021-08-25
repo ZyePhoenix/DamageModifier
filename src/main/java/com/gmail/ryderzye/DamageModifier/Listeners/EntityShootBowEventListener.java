@@ -1,6 +1,6 @@
-package com.gmail.ryderzye.damagemodifier.Listeners;
+package com.gmail.ryderzye.DamageModifier.Listeners;
 
-import com.gmail.ryderzye.damagemodifier.DamageModifier;
+import com.gmail.ryderzye.DamageModifier.DamageModifier;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
